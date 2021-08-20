@@ -13,8 +13,9 @@
 
 <body>
 
+    Thirto Pual
     <section id="about" class="container d-flex justify-content-center xl:mt-44 ">
-        <div class="mt-5" style="">
+        <div class="mt-5">
             <div class="row  xl:mt-20 ">
                 <div class="col-md-4 mt-lg-5" data-aos="fade-right" data-aos-duration="1000">
                     <img src="images/mac.png" class="img-fluid " alt="...">
@@ -31,27 +32,32 @@
 
                     <div class="mt-lg-5">
                         <p class="fw-bold">Memory</p>
-                        <button type="button" class="btn btn-outline-dark btn-sm ">8GB unified memory</button>
-                        <button type="button" class="btn btn-outline-dark btn-sm mx-3 ">16GB unified memory</button>
+                        <button id="memory-btn1" type="button" class="btn btn-outline-dark btn-sm ">8GB unified
+                            memory</button>
+                        <button id="memory-btn2" type="button" class="btn btn-outline-dark btn-sm mx-3 ">16GB unified
+                            memory</button>
                     </div>
 
                     <!-- Storage -->
 
                     <div class="mt-lg-5">
                         <p class="fw-bold">Storage</p>
-                        <button type="button" class="btn btn-outline-dark btn-sm ">256GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-dark btn-sm mx-1 ">512GB SSD storage</button>
-                        <button type="button" class="btn btn-outline-dark btn-sm  ">1TB SSD storage</button>
+                        <button id="storage-btn1" type="button" class="btn btn-outline-dark btn-sm ">256GB SSD
+                            storage</button>
+                        <button id="storage-btn2" type="button" class="btn btn-outline-dark btn-sm mx-1 ">512GB SSD
+                            storage</button>
+                        <button id="storage-btn3" type="button" class="btn btn-outline-dark btn-sm  ">1TB SSD
+                            storage</button>
                     </div>
 
                     <!-- Delivery -->
 
                     <div class="mt-lg-5">
                         <p class="fw-bold">Choose your delivery option</p>
-                        <button type="button" class="btn btn-outline-dark btn-sm ">Friday,Aug 25 FREE Prime
-                            Delivery</button>
-                        <button type="button" class="btn btn-outline-dark btn-sm mx-1 ">Friday,Aug 21 Delivery charge
-                            $20</button>
+                        <button id="delivery-btn1" type="button" class="btn btn-outline-dark btn-sm ">Friday,Aug 25 FREE
+                            Prime Delivery</button>
+                        <button id="delivery-btn2" type="button" class="btn btn-outline-dark btn-sm mx-1 ">Friday,Aug 21
+                            Delivery charge $20</button>
                     </div>
 
                     <!-- Amount -->
@@ -60,27 +66,32 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th scope="row">Base Price</th>
-                                    <td id="total-task">$1299</td>
+                                    <th>Base Price</th>
+                                    <th id="total-task">$1299</th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Extra Memory Cost</th>
-                                    <td id="done-task">$0</td>
+                                    <th>Extra Memory Cost</th>
+                                    <th>$<span id="memory-cost">0</span></th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Extra Storage Cost</th>
-                                    <td id="undone-task">$0</td>
+                                    <th>Extra Storage Cost</th>
+                                    <th>$<span id="storage-cost">0</span></th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Delivery charge</th>
-                                    <td id="undone-task">$0</td>
+                                    <th>Delivery charge</th>
+                                    <th>$<span id="delivery-cost">0</span></th>
                                 </tr>
                             </tbody>
                             <tfoot>
-                                <th scope="row">Total</th>
-                                <td id="undone-task">$1299</td>
+                                <th>Total</th>
+                                <th>$<span id="total-cost">0</span></th>
                             </tfoot>
                         </table>
+                    </div>
+                    <div class="mt-5">
+                        <p>Add pomo code</p>
+                        <input placeholder="Enter your pomo code" type="text">
+                        <button type="button" class="btn btn-outline-danger btn-sm mx-3 ">Apply</button>
                     </div>
                 </div>
             </div>
@@ -91,6 +102,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+
+    <script src="JS/app.js"></script>
 
 </body>
 
